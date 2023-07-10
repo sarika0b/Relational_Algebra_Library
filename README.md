@@ -19,10 +19,7 @@ expression in the attribute values in disjunctive normal form.
 Relation * union (Relation * R1, DNFformula * f)
 where
 struct DNFformula { list <list <tuple <string, char, Attr *> > 
-> ops; } is a list of list of tuples with each tuple representing a comparison.
-The top level list stores disjunctions of clauses, each of which represents a list 
-of conjunctions of comparisons. For simplicity assume that there are no 
-negations.
+
 6. Rename: rename an attribute in schema
 Relation * difference (Relation * R1, string s1, string s2)
 7. Natural Join
